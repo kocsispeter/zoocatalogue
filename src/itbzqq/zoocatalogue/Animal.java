@@ -1,5 +1,6 @@
 package itbzqq.zoocatalogue;
 
+
 public class Animal implements Comparable<Animal> {
     private long id;
     private String name;
@@ -80,15 +81,15 @@ public class Animal implements Comparable<Animal> {
 
     @Override
     public String toString() {
-        final StringBuilder sb = new StringBuilder("Animal{");
+        final StringBuilder sb = new StringBuilder();
         sb.append("id=").append(id);
-        sb.append(", name='").append(name).append('\'');
-        sb.append(", species='").append(species).append('\'');
-        sb.append(", countryOfOrigin='").append(countryOfOrigin).append('\'');
+        sb.append(", name='").append(name);
+        sb.append(", species='").append(species);
+        sb.append(", countryOfOrigin='").append(countryOfOrigin);
         sb.append(", isBorrowed=").append(isBorrowed);
-        sb.append(", nutrition='").append(nutrition).append('\'');
-        sb.append(", medicalPrescript='").append(medicalPrescript).append('\'');
-        sb.append('}');
+        sb.append(", nutrition='").append(nutrition);
+        sb.append(", medicalPrescript='").append(medicalPrescript);
+       // sb.append("\n");
         return sb.toString();
     }
 
